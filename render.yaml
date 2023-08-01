@@ -1,16 +1,18 @@
 services:
   - type: web
-    name: metabase
+    name: metabase-web
     env: docker
-    repo: https://github.com/render-examples/metabase.git # optional
+    repo: https://github.com/polarsource/metabase.git # optional
     plan: standard # ensure that metabase has at least 2GB of RAM (defaults to starter)
+    region: ohio
     autoDeploy: false
     envVars:
       - key: MB_DB_CONNECTION_URI
         fromDatabase:
-          name: elephant
+          name: metabase-db
           property: connectionString
 databases:
-  - name: elephant
+  - name: metabase-db
+    region: ohio
     databaseName: metabasedb
     ipAllowList: [] # only allow internal connections
