@@ -16,6 +16,6 @@ services:
 databases:
   - name: metabase-db
     region: ohio
-    plan: 0.5c-1g
+    plan: 2c-4g
     databaseName: metabasedb
     ipAllowList: [] # only allow internal connections
