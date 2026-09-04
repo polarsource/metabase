@@ -1,0 +1,14 @@
+render.yaml
+  h_cc2173b7b86bcc 19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "fadd346375a5a95c47eb9ec24d22fff592155bd0",
+  "prompts": {},
+  "humans": {
+    "h_cc2173b7b86bcc": {
+      "author": "Joel Bonander <joel@polar.sh>"
+    }
+  }
+}
