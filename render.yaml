@@ -1,17 +1,23 @@
 services:
-  - type: web
-    name: metabase-web
+  - type: pserv
+    name: metabase-private
     env: docker
     repo: https://github.com/polarsource/metabase.git
     plan: 1c-2g
     region: ohio
     autoDeploy: false
+    disk:
+      name: tailscale-state
+      mountPath: /var/lib/tailscale
+      sizeGB: 1
     envVars:
       - key: MB_DB_CONNECTION_URI
         fromDatabase:
           name: metabase-db
           property: connectionString
       - key: MB_SESSION_SECRET_KEY
+        sync: false
+      - key: TS_AUTHKEY
         sync: false
 databases:
   - name: metabase-db
