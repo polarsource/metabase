@@ -3,7 +3,7 @@ services:
     name: metabase-private
     env: docker
     repo: https://github.com/polarsource/metabase.git
-    plan: 1c-2g
+    plan: 2c-4g
     region: ohio
     autoDeploy: false
     disk:
@@ -22,6 +22,6 @@ services:
 databases:
   - name: metabase-db
     region: ohio
-    plan: 2c-4g
+    plan: 0.5c-1g
     databaseName: metabasedb
     ipAllowList: [] # only allow internal connections
