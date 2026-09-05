@@ -11,6 +11,8 @@ services:
       mountPath: /var/lib/tailscale
       sizeGB: 1
     envVars:
+      - key: PORT
+        value: "3000"
       - key: MB_DB_CONNECTION_URI
         fromDatabase:
           name: metabase-db
