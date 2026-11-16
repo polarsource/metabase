@@ -1,0 +1,14 @@
+render.yaml
+  h_868de2c7aaf22e 14-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "e4c88718430d8c60a0f9a15f7b7a1070965ad9fe",
+  "prompts": {},
+  "humans": {
+    "h_868de2c7aaf22e": {
+      "author": "François Voron <me@fvoron.com>"
+    }
+  }
+}
