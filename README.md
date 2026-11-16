@@ -9,3 +9,7 @@ This repo can be used to deploy [Metabase](https://metabase.com) on Render.
 See the guide at https://render.com/docs/deploy-metabase.
 
 If you need help, reach out at https://community.render.com.
+
+## Datavine agent
+
+This repo also deploys a [Datavine agent](https://agent-docs.datavine.com) as a separate Render background worker.

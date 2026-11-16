@@ -1,7 +1,20 @@
 services:
+  - type: worker
+    name: datavine-agent
+    runtime: docker
+    repo: https://github.com/polarsource/metabase.git
+    dockerfilePath: ./datavine/Dockerfile
+    dockerContext: ./datavine
+    plan: 0.5c-512mb
+    region: ohio
+    autoDeployTrigger: 'off'
+    disk:
+      name: datavine-state
+      mountPath: /opt/datavine-cloud-connector
+      sizeGB: 1
   - type: pserv
     name: metabase-private
-    env: docker
+    runtime: docker
     repo: https://github.com/polarsource/metabase.git
     plan: 2c-4g
     region: ohio
