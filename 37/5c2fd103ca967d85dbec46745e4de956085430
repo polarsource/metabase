@@ -1,0 +1,28 @@
+render.yaml
+  s_202e31eff7f358::t_c151b118bd7f02 17
+  s_202e31eff7f358::t_4d3ca7d3bf1025 2-14
+datavine/Dockerfile
+  s_202e31eff7f358::t_4d3ca7d3bf1025 1-23
+datavine/start.sh
+  s_202e31eff7f358::t_e5299d27142996 4
+  s_202e31eff7f358::t_4d3ca7d3bf1025 1-3,5-30
+README.md
+  s_202e31eff7f358::t_16ec118c0272f2 15
+  s_202e31eff7f358::t_4d3ca7d3bf1025 12-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "375c2fd103ca967d85dbec46745e4de956085430",
+  "prompts": {},
+  "sessions": {
+    "s_202e31eff7f358": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1e3c4-7292-7f30-ae6e-13705e34ab74",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "François Voron <me@fvoron.com>"
+    }
+  }
+}
