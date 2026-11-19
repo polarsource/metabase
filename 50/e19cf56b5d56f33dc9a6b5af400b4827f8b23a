@@ -1,0 +1,19 @@
+Dockerfile
+  s_b6ebefe0a2baf3::t_350af9d7b6aa37 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "50e19cf56b5d56f33dc9a6b5af400b4827f8b23a",
+  "prompts": {},
+  "sessions": {
+    "s_b6ebefe0a2baf3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1968959a-328f-4bf7-89a0-6964b8d5d690",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Jesper Bränn <jesper@brann.dev>"
+    }
+  }
+}
