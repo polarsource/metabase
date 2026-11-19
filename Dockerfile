@@ -1,6 +1,6 @@
 FROM tailscale/tailscale:stable AS tailscale
 
-FROM metabase/metabase-enterprise:v1.65.4.x
+FROM metabase/metabase-enterprise:v1.65.6.x
 
 COPY --from=tailscale /usr/local/bin/tailscale /usr/local/bin/tailscale
 COPY --from=tailscale /usr/local/bin/tailscaled /usr/local/bin/tailscaled
